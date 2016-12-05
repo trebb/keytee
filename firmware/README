@@ -1,0 +1,8 @@
+Building firmware .hex file:
+
+$ make program
+
+
+Upload firmware to keyboard (initiate RESET by connecting RST to GND):
+
+$ make dfu

@@ -1,0 +1,12 @@
+(module SolderWirePad_SMD_circular (layer F.Cu) (tedit 5844AFE2)
+  (descr "Wire Pad, Square, SMD Pad,  5mm x 10mm,")
+  (tags "MesurementPoint Square SMDPad 5mmx10mm ")
+  (attr smd)
+  (fp_text reference REF** (at 0 -2.2) (layer F.SilkS) hide
+    (effects (font (size 1 1) (thickness 0.15)))
+  )
+  (fp_text value SolderWirePad_SMD_circular (at 0 2.45) (layer F.Fab) hide
+    (effects (font (size 1 1) (thickness 0.15)))
+  )
+  (pad 1 smd circle (at 0 0) (size 1.5 1.5) (layers F.Cu F.Paste F.Mask))
+)
