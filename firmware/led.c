@@ -22,31 +22,10 @@ along with this program.  If not, see <http://www.gnu.org/licenses/>.
 /*
  * LED pin configuration
  * LED: NumLock ScrollLock CapsLock
- * pin: D0      D4         D5
+ * pin:
  */
 
 void
 led_set(uint8_t usb_led)
 {
-    if (usb_led & (1<<USB_LED_NUM_LOCK)) {
-        DDRD |=  (1<<0);
-        PORTD |= (1<<0);
-    } else {
-        DDRD |=   (1<<0);
-        PORTD &= ~(1<<0);
-    }
-    if (usb_led & (1<<USB_LED_SCROLL_LOCK)) {
-        DDRD |=  (1<<4);
-        PORTD |= (1<<4);
-    } else {
-        DDRD |=   (1<<4);
-        PORTD &= ~(1<<4);
-    }
-    if (usb_led & (1<<USB_LED_CAPS_LOCK)) {
-        DDRD |=  (1<<5);
-        PORTD |= (1<<5);
-    } else {
-        DDRD |=   (1<<5);
-        PORTD &= ~(1<<5);
-    }
 }

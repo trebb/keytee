@@ -25,12 +25,12 @@ along with this program.  If not, see <http://www.gnu.org/licenses/>.
 /* (Thanks to http://pid.codes) */
 #define DEVICE_VER 0x0001
 #define MANUFACTURER trebb
-#define PRODUCT NaN-15
-#define DESCRIPTION TMK keyboard firmware for NaN-15
+#define PRODUCT keytee
+#define DESCRIPTION TMK keyboard firmware for keytee
 
 /* key matrix size */
-#define MATRIX_ROWS 4
-#define MATRIX_COLS 4
+#define MATRIX_ROWS 10
+#define MATRIX_COLS 10
 
 /* define if matrix has ghost */
 //#define MATRIX_HAS_GHOST
@@ -43,11 +43,11 @@ along with this program.  If not, see <http://www.gnu.org/licenses/>.
  *  These options are also useful to firmware size reduction.
  */
 
-/* disable debug print */
-#define NO_DEBUG
+/* enable debug print */
+#undef NO_DEBUG
 
 /* disable print */
-#define NO_PRINT
+//#undef NO_PRINT
 
 /* disable action features */
 //#define NO_ACTION_LAYER

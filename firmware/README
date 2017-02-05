@@ -1,8 +1,13 @@
-Building firmware .hex file:
+In order to install a bootloader and to set the fuses, connect GND,
+5V, RST, SCLK, MISO, and MOSI to a USBasp programmer; then,
 
-$ make program
+$ make bootloader-dfu
+$ make fuses
 
 
-Upload firmware to keyboard (initiate RESET by connecting RST to GND):
+
+With the bootloader in place, plug the keytee USB terminal into your
+computer.  You may have to initiate RESET by connecting RST to GND.
+Then, build and upload firmware:
 
 $ make dfu
