@@ -3,7 +3,7 @@ keytee -- Controller breakout board for small keyboards
 Keytee is based on the ATMEGA32U2 controller.  With its 20 usable I/O
 pins, it can drive keyboards with up to 100 keys.  The PCB is intended
 to sit between the switches of a mechanical keyboard, not adding any
-bulk; cf. https://github.com/trebb/keytee.
+bulk; cf. http://imgur.com/v3vOg1i.
 
 
 ./pcb/ contains the hardware design as a KiCAD project.
