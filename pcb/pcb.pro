@@ -1,4 +1,4 @@
-update=Sat 10 Dec 23:21:40 2016
+update=Sun 15 Jan 12:55:22 2017
 version=1
 last_client=kicad
 [pcbnew]
@@ -58,6 +58,8 @@ LibName28=atmel
 LibName29=contrib
 LibName30=valves
 LibName31=nan-15
+[general]
+version=1
 [schematic_editor]
 version=1
 PageLayoutDescrFile=
@@ -69,5 +71,3 @@ SpiceForceRefPrefix=0
 SpiceUseNetNumbers=0
 LabSize=60
 ERC_TestSimilarLabels=1
-[general]
-version=1
