@@ -6,6 +6,11 @@ gh-pages: Makefile
 	cp pcb/plot_files/keytee.zip gh-pages/
 	cp pcb/plot_files/pcb.pdf gh-pages/
 	cp pcb/plot_files/component-side.pdf gh-pages/
+	$(MAKE) -C firmware bootloaders
+	cp firmware/tmk_keyboard/tmk_core/protocol/lufa/LUFA-git/Bootloaders/DFU/BootloaderDFU.hex gh-pages/
+	cp firmware/tmk_keyboard/tmk_core/protocol/lufa/LUFA-git/Bootloaders/MassStorage/BootloaderMassStorage.hex gh-pages/
+	$(MAKE) -C firmware all
+	cp firmware/keytee_lufa.hex gh-pages/
 	echo '<h3>Generated files of project <a href="https://github.com/trebb/keytee">keytee</a></h3>' > gh-pages/index.html
 	ls gh-pages | \
 		grep -v index.html | \
